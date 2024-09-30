@@ -227,8 +227,6 @@ Log this part of the list to the console. Unlike the two previous checkpoints, y
 console.log(groceryList.slice(1, 4));
 console.log(groceryList);
 
-const pastaIndex = groceryList.indexOf('pasta');
-
 
 // Task 4:
 // After calling .slice() on groceryList
@@ -238,3 +236,14 @@ console.log(groceryList);
 // Notice that the groceryList array still contains the same items it had in Step 2. 
 //That means .slice() is non-mutating!
 // You can confirm this in the link in the previous step.
+
+// Task 5:
+// Let’s find the index of a particular element in groceryList 
+// using .indexOf().
+
+// Call .indexOf() on groceryList to find the index of the element 'pasta' 
+// and save the returned value to a const variable named pastaIndex.
+const pastaIndex = groceryList.indexOf('pasta');
+
+// Then log pastaIndex to the console.
+// (You may remove the other console.log() statements to declutter the terminal.)

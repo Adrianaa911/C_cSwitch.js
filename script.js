@@ -228,3 +228,13 @@ console.log(groceryList.slice(1, 4));
 console.log(groceryList);
 
 const pastaIndex = groceryList.indexOf('pasta');
+
+
+// Task 4:
+// After calling .slice() on groceryList
+// log the grocery list to the console one more time.
+console.log(groceryList);
+
+// Notice that the groceryList array still contains the same items it had in Step 2. 
+//That means .slice() is non-mutating!
+// You can confirm this in the link in the previous step.

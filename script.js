@@ -175,3 +175,56 @@ In the example above, calling .pop() on the newItemTracker array removed item 2 
 .pop() is a method that mutates the initial array.
 When you need to mutate an array by removing the last element, use .pop().
 */
+
+
+
+
+// Some arrays methods that are available to JavaScript developers include: 
+// .join(), .slice(), .splice(), .shift(), .unshift(), and .concat() amongst many others. 
+//Using these built-in methods makes it easier to do some common tasks when working with arrays.
+
+const daysOfWeek = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];
+
+const remove = daysOfWeek.shift();
+
+console.log('Removed day:', remove);
+
+console.log('Rest of week:', daysOfWeek);
+
+// Task 1
+// Use the .shift() method to remove the first item from the array groceryList.
+// Log the new groceryList to the console.
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+groceryList.shift();
+console.log(groceryList);
+
+
+// Task 2 
+// Under the code added in step 1, use the .unshift() method to add 'popcorn' to the beginning of your grocery list.
+// After calling .unshift() on groceryList, log groceryList to the console.
+// You may wish to delete the console.log() statement from the previous step.
+groceryList.unshift('popcorn');
+console.log(groceryList);
+
+
+// Task 3
+/*
+You’re in a hurry so you decide to ask a friend to help you with your grocery shopping. You want him to pick up the 'bananas', 'coffee beans', and 'brown rice'.
+
+Under the code you added for step 2, use .slice() to provide your friend with a list of these three things.
+
+Log this part of the list to the console. Unlike the two previous checkpoints, you should do both of these steps in one line.
+*/
+
+console.log(groceryList.slice(1, 4));
+console.log(groceryList);
+
+const pastaIndex = groceryList.indexOf('pasta');

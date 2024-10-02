@@ -320,4 +320,15 @@ const numberClusters = [[1, 2], [3, 4], [5, 6]];
 //and assign to access the element 6 inside numberClusters.
 const target = numberClusters[2][1];
 
+//Review Arrays tasks:
+//Use the .length property to find the last element of an array.
 
+//Use the other methods in MDN documentation not mentioned in the lesson.
+
+//Take all the elements in an array and make a string.
+
+// Find the return value of calling .push() on an array.
+
+//Nest an array within an array.
+
+//Access an element in the nested array.

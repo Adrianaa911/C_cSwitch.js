@@ -247,3 +247,31 @@ const pastaIndex = groceryList.indexOf('pasta');
 
 // Then log pastaIndex to the console.
 // (You may remove the other console.log() statements to declutter the terminal.)
+
+
+
+// -- Arrays and Functions --
+// what happens if we try to change an array inside a function? 
+
+// Take a look at the following example where we call 
+// Exemple: 
+ // .push() on an array inside a function. 
+ //Recall, the .push() method mutates, or changes, an array:
+ const flowers = ['peony', 'daffodil', 'marigold'];
+
+function addFlower(arr) {
+  arr.push('lily');
+}
+
+addFlower(flowers);
+
+console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+
+/*
+Let’s go over what happened in the example:
+
+The flowers array that has 3 elements.
+The function addFlower() has a parameter of arr uses .push() to add a 'lily' element into arr.
+We call addFlower() with an argument of flowers which will execute the code inside addFlower.
+We check the value of flowers and it now includes the 'lily' element! The array was mutated!
+*/
